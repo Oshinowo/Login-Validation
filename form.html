@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>validation page</title>
+</head>
+<body>
+	<form>
+		<table border="1" >
+			<th colspan="2">validation form</th>
+		<tr><td>Username: </td><td><input type="text" name="fname" placeholder="Username" id="usrnme" onkeyup="username()" required=""></td><td><div id="show"></div></td></tr>
+		<tr><td>Email: </td><td><input type="email" name="email" id="email" placeholder="Enter Your Email" required=""></td></tr>
+		<tr><td>Password: </td><td><input type="password" name="pswd" id="pswd" placeholder="Enter Your Password" required=""></td></tr>
+		<tr><td>Confirm Password: </td><td><input type="password" name="cpswd" id="cpswd" placeholder="Confirm Password" required="" onkeyup="password()"></td><td><div id="mcpswd"></div></td></tr>
+	</table><br>
+	<button type="submit" id="btn">Submit</button>
+	<!-- <input type="file" name="" accept=".mp3"> -->
+	</form>
+  <script type="text/javascript" src="form.js"></script>
+</body>
+</html>
